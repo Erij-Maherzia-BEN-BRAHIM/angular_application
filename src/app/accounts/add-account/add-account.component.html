@@ -1,0 +1,11 @@
+<div class="container-fluid">
+<p>Account name</p>
+<label for="nom">Nom:</label>
+<input #inp type="text"> <br><br>
+<label for="statuts">status:</label>
+<select #sel name="status" >
+<option *ngFor="let st of typeStatus" [value]="st">{{st}}</option>
+
+</select> <br><br>
+<button (click)="addAccount(inp.value, sel.value)" class="btn-primary" type="submit">Add Account</button>
+</div>

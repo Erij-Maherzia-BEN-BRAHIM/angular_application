@@ -1,0 +1,23 @@
+<div class="container">
+<div [ngStyle]="{
+    'backgroundColor':bgColor,
+    'color': color,
+    'fontSize': size +'px',
+    fontFamily: font
+}">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore fugiat delectus a at animi consectetur voluptatibus ipsa sed repudiandae, quisquam architecto nam ex veritatis sapiente esse quis odit obcaecati? Architecto.</div>
+<br><br>
+<label for="bgColor"> Entrer la couleur du bg</label> <br>
+<input type="text" [(ngModel)]="bgColor"><br>
+<label for="color">Entrer la couleur du text</label><br>
+<input type="text"  [(ngModel)]="color"><br>
+<label for="size">Saisir la taille de la police</label><br>
+<input type="number"  [(ngModel)]="size"><br>
+<label for="">Choisir le type de police </label><br>
+<select name="" id=""  [(ngModel)]="font">
+    <option></option>
+    <option >Comic Sans MS</option>
+    <option >Times New Roman</option>
+    <option >ALGERIAN</option>
+</select>
+</div>

@@ -1,0 +1,12 @@
+<div class="container-fluid">
+<div class="card">
+<div class="card-title"> <h5>{{myAccount.nom}}</h5></div>
+<div class="card-body"> <p>This account is {{myAccount.status}}</p> 
+<button (click)="changeStatus('active')" class="btn-success">Set to 'active'</button> 
+<button (click)="changeStatus('inactive')" class="btn-danger">Set to 'inactive</button>
+<button (click)="changeStatus('unknown')" class="btn-info"> Set to 'unknown'</button>
+</div>
+</div>
+
+
+</div>
